@@ -1,0 +1,4 @@
+#!/bin/bash
+cd build
+clear && make && ./TaskerTest
+cd ..
