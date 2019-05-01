@@ -13,8 +13,10 @@ file(GLOB CLASSES "src/*.cpp")
 
 
 file(GLOB UTALL "ut/*.cpp" )
+file(GLOB UT_ADDTAKS "ut/AddTaskTest.cpp" )
 
-set(SOURCES ${CLASSES} "ut/main.cpp" ${UTALL}) #${UT} ${UT1} ${UT2} ${UT3})
+#set(SOURCES ${CLASSES} "ut/main.cpp" ${UTALL})
+set(SOURCES ${CLASSES} "ut/main.cpp" ${UT_ADDTAKS})
 
 
 add_executable(TaskerTest ${SOURCES})
