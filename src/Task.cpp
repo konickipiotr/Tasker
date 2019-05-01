@@ -1,11 +1,11 @@
 #include "Task.hpp"
 
 Task::Task(std::string _taskName) 
-    :   taskName(_taskName),
-        description(""),
-        priority(Priority::MEDIUM),
-        duration(0),
-        isFinished(false)
+    :   taskName{_taskName},
+        description{""},
+        priority{Priority::MEDIUM},
+        duration{},
+        isFinished{false}
 {}
 
 std::string Task::getTaskName() const 
@@ -59,4 +59,9 @@ void Task::setPriority(Priority newPriority)
 void Task::setDurarion(int newDuration)
 {
     duration = newDuration;
+}
+
+void Task::setCategory(std::string newCategory)
+{
+    category = newCategory;
 }

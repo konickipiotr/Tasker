@@ -19,8 +19,10 @@ public:
     void setDescription(std::string);
     void setPriority(Priority);
     void setDurarion(int);
+    void setCategory(std::string);
 
     virtual void finishTask() = 0;
+    virtual ~Task() = default;
 
 protected:
     std::string taskName;

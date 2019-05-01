@@ -14,12 +14,10 @@ enum class Priority
     LOW
 };
 
-enum class Deadline
+enum class TodayTomorrow
 {
-    NONE,
     TODAY,
-    TOMORROW,
-    YESTERDAY
+    TOMORROW
 };
 
 enum class DayOfWeek
